@@ -1,0 +1,65 @@
+package com.creditcard.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.mock.mockito.MockBean;
+
+import com.creditcard.entities.CustomerCreditCard;
+import com.creditcard.repositories.CustomerCreditCardRepository;
+import com.creditcard.service.CustomerCreditCardService;
+
+class CustomerCreditCardTest {
+
+	@Autowired
+	CustomerCreditCardService customercreditcardService;
+	@MockBean
+	CustomerCreditCardRepository customercreditcardReposity;
+	CustomerCreditCard customercreditcard;
+
+	@BeforeAll
+	static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterAll
+	static void tearDownAfterClass() throws Exception {
+	}
+
+	@BeforeEach
+	void setUp() throws Exception {
+		customercreditcard = new CustomerCreditCard();
+		customercreditcard.getCardNumber();
+		customercreditcard.getCode();
+		customercreditcard.getCreditCard();
+		customercreditcard.getfDate();
+		customercreditcard.getName();
+		customercreditcard.getToDate();
+		customercreditcard.getUser();
+	}
+
+	@AfterEach
+	void tearDown() throws Exception {
+	}
+
+	@Test
+	void test() {
+		Mockito.when(customercreditcardReposity.save(customercreditcard)).thenReturn(customercreditcard);
+		assertThat(customercreditcardService.addCustomerCreditCard(customercreditcard));
+
+	}
+
+	@Test
+	void testGetMovieShow() throws ShowNotFoundException {
+		ArrayList showList = new ArrayList();
+
+		Mockito.when(customercreditcardReposity.findAll()).thenReturn(showList);
+		assertThat(customercreditcardService.getAlltransaction()).isEqualTo(showList);
+
+	}
+
+}

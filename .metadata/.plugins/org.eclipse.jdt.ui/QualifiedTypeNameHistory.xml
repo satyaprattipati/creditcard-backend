@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.WebMvcConfigurer"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.CorsRegistry"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+<fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
+<fullyQualifiedTypeName name="javax.persistence.Temporal"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
+<fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+<fullyQualifiedTypeName name="javax.persistence.SequenceGenerator"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonBackReference"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonManagedReference"/>
+<fullyQualifiedTypeName name="com.creditcard.exception.NotFoundException"/>
+<fullyQualifiedTypeName name="com.creditcard.payload.ValidateUserReq"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
+<fullyQualifiedTypeName name="com.google.common.base.Optional"/>
+<fullyQualifiedTypeName name="java.util.Optional"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.data.repository.query.Param"/>
+<fullyQualifiedTypeName name="com.creditcard.entities.Transaction"/>
+<fullyQualifiedTypeName name="com.creditcard.repositories.TransactionRepository"/>
+<fullyQualifiedTypeName name="org.springframework.boot.test.mock.mockito.MockBean"/>
+<fullyQualifiedTypeName name="com.creditcard.service.TransactionServiceImpl"/>
+<fullyQualifiedTypeName name="com.creditcard.exception.UserNotFoundException"/>
+<fullyQualifiedTypeName name="com.creditcard.exception.TransactionNotFoundException"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.creditcard.exception.CreditCardNotFoundException"/>
+<fullyQualifiedTypeName name="com.creditcard.entities.Admin"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+</qualifiedTypeNameHistroy>

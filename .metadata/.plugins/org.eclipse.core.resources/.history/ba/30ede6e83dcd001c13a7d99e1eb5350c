@@ -1,0 +1,68 @@
+package com.creditcard.entities;
+
+import java.time.LocalDate;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+@Entity
+@Table(name = "Customer_tbl")
+public class User {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="userId",nullable=false)
+	private int userId;
+	
+	@Column(name="fName")
+	private String fName;
+	
+	@Column(name="lName")
+	private String lName;
+	
+	@Column(name="mail")
+	private String mail;
+	
+	@Column(name="phNumber")
+	private long phNumber;
+	
+	
+	private String village;
+	private String city;
+	private String state;
+	private int pincode;
+	
+	@Column(name="userName")
+	private String userName;
+	
+	@Column(name="password")
+	private String password;
+	
+	@Column(name="income")
+	private int income;
+	
+	@Column(name="gender")
+	private String gender;
+	
+	@Column(name="education")
+	private String education;
+	private LocalDate dob;
+	
+	private String role;
+	
+	
+
+	@JsonIgnore
+	@OneToOne(mappedBy="user")
+	private CustomerCreditCard customerCreditCard;
+
+
+	
+	
+	
+}

@@ -1,0 +1,5 @@
+package com.creditcard.payload;
+
+public class ValidateUserReq {
+
+}
